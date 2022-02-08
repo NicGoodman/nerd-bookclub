@@ -1,2 +1,21 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script context="module">
+	export async function load({ fetch }) {
+		const response = await fetch('/entries.json');
+		if (response.ok) {
+			const { entries } = await response.json();
+			return {
+				props: {
+					entries
+				}
+			};
+		}
+	}
+</script>
+
+<script>
+	export let entries;
+	console.log(entries);
+</script>
+
+<h1>Hello World!</h1>
+{entries.title[0].plain_text}
