@@ -11,8 +11,8 @@ exports.handler = async (event, _, callback) => {
     }
   );
   const entries = await res.json();
-  return {
-    status: 200,
-    body: { entries }
-  };
+    callback(null, {
+      statusCode: 200,
+      body: { entries },
+    });
   };
