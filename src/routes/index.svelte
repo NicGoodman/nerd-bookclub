@@ -17,4 +17,4 @@
 </script>
 
 <h1>Hello World!</h1>
-{import.meta.env.VITE_AUTH_TOKEN}
+{entries.title[0].plain_text}
