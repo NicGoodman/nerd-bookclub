@@ -1,6 +1,5 @@
 export async function get() {
-	// @ts-ignore
-	const res = await fetch(import.meta.env.VITE_ENDPOINT, {
+	const res = await fetch(`${import.meta.env.VITE_ENDPOINT}`, {
 		method: 'GET',
 		headers: {
 			'Notion-Version': '2021-05-13',
