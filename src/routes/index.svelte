@@ -16,5 +16,5 @@
 	export let entries;
 </script>
 
-<h1>Hello World!</h1>
+<h1 class="text-blue-400">Hello World!</h1>
 {entries.title[0].plain_text}
