@@ -1,7 +1,19 @@
 import { writable, derived } from 'svelte/store';
 
-export const entryData = writable();
-export const databaseData = writable();
+export const entryData = writable({
+	data: {
+		results: Array
+	}
+});
+export const databaseData = writable({
+	data: {
+		title: Array,
+		id: String,
+		cover: String,
+		icon: String,
+		last_edited_time: String
+	}
+});
 
 export const databaseInfo = derived(databaseData, ($databaseData) => {
   return {
@@ -35,8 +47,3 @@ export const entries = derived(entryData, ($entryData) => {
 	}
 	return objects;
 });
-
-// if ($entryData.data.results){
-//   return $entryData.data.results.map(name => name.properties.Name.title[0].text.content);
-// }
-// return [];

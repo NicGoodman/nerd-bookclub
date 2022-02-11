@@ -1,5 +1,5 @@
 <script context="module">
-	import { entryData, databaseData } from './stores.js';
+	import { entryData, databaseData } from './stores';
 	export async function load({ fetch }) {
 		const entriesResponse = await fetch('/api/entries');
 		const databaseInfoResponse = await fetch('/api/database');
