@@ -1,20 +1,19 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const response = await fetch('/api/entries');
-		if (response.ok) {
-			const { entries } = await response.json();
-			return {
-				props: {
-					entries
-				}
-			};
-		}
-	}
-</script>
-
 <script>
-	export let entries;
+	import { entries, databaseInfo } from './stores.js';
 </script>
 
-<h1 class="text-blue-400 text-4xl">Hello World!</h1>
-{entries.title[0].plain_text}
+<header class="w-screen flex flex-row">
+    <!-- <h1>{$databaseInfo.data.title[0].text.content}</h1> -->
+</header>
+
+<main class="w-screen flex flex-col">
+	<h2>Current Reading</h2>
+	{$databaseInfo.name}
+	<ul>
+		{#each $entries as entry}
+			<li>
+				{entry.name}
+			</li>
+		{/each}
+	</ul>
+</main>
