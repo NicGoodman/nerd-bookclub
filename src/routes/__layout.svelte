@@ -47,7 +47,7 @@
 		<a href="/" class="{currentRoute === '/' ? 'text-cyan-400 border-b-pink-600' : 'text-cyan-200 border-b-transparent '} hover:text-yellow-500 border-b hover:border-b-pink-600 transition-all">Home</a>
 		<a href="/current-book" class="{currentRoute === '/current-book' ? 'text-cyan-400 border-b-pink-600' : 'text-cyan-200 border-b-transparent '} hover:text-yellow-500 border-b hover:border-b-pink-600 transition-all">Current</a>
 		<a
-			href="https://nicgoodman.notion.site/2063e4db5bfa4f0f92c0e350a64f29d8?v=a4b8579bf9524854911f8c679bf7fbe0" class="text-cyan-200 hover:text-yellow-500 border-b border-b-transparent hover:border-b-pink-600 transition-all"
+			href="https://nicgoodman.notion.site/2063e4db5bfa4f0f92c0e350a64f29d8?v=a4b8579bf9524854911f8c679bf7fbe0" class="text-cyan-200 hover:text-yellow-500 border-b border-b-transparent hover:border-b-pink-600 transition-all" target="_blank"
 			>Notion</a
 		>
 	</nav>
