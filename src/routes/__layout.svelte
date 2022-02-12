@@ -30,11 +30,11 @@
 	class="w-screen p-8 bg-cover bg-top aspect-[2.5/1] border-b-2 border-b-[#9f5eb1]"
 	style="background-image: url('{$databaseInfo.cover}');"
 >
-<section id="header-content-wrapper" class="p-4 bg-slate-900 bg-opacity-75 w-max border-2 border-[#9f5eb1] backdrop-blur-lg">
+<section id="header-content-wrapper" class="p-4 mx-auto md:mx-0 bg-slate-900 bg-opacity-75 w-max border-2 border-[#9f5eb1] backdrop-blur-lg">
 	{#if ($databaseInfo.icon_type = 'emoji')}
 		<h1
 			id="site-title"
-			class="text-4xl font-michroma uppercase font-black text-pink-600 [text-shadow:0_0px_16px_rgba(82,163,212,1)]"
+			class="text-xl md:text-4xl font-michroma uppercase font-black text-pink-600 [text-shadow:0_0px_16px_rgba(82,163,212,1)]"
 		>
 			{$databaseInfo.icon}
 			{$databaseInfo.name}
@@ -43,7 +43,7 @@
 		<img id="site-logo" class="h-11 pr-4" src={$databaseInfo.icon} alt="" />
 		<h1 id="site-title" class="text-4xl font-michroma">{$databaseInfo.name}</h1>
 	{/if}
-	<nav id="site-nav" class="w-full space-x-4 mt-4 font-bold tracking-wider font-mono transition-all">
+	<nav id="site-nav" class="w-full text-center space-x-4 mt-4 font-bold tracking-wider font-mono transition-all text-sm md:text-base">
 		<a href="/" class="{currentRoute === '/' ? 'text-cyan-400 border-b-pink-600' : 'text-cyan-200 border-b-transparent '} hover:text-yellow-500 border-b hover:border-b-pink-600 transition-all">Home</a>
 		<a href="/current-book" class="{currentRoute === '/current-book' ? 'text-cyan-400 border-b-pink-600' : 'text-cyan-200 border-b-transparent '} hover:text-yellow-500 border-b hover:border-b-pink-600 transition-all">Current</a>
 		<a
