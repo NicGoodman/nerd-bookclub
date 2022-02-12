@@ -27,12 +27,6 @@ export async function get() {
 						"people": {
 							"is_not_empty": true
 						}
-					},
-					{
-						"property": "URL",
-						"rich_text": {
-							"is_not_empty": true
-						}
 					}
 				]
 			}
