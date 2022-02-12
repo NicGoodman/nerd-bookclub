@@ -27,7 +27,7 @@
 
 <header
 	id="site-header"
-	class="w-screen p-8 bg-cover bg-top aspect-[2/1] border-b-2 border-b-[#9f5eb1]"
+	class="w-screen p-8 bg-cover bg-top aspect-[2.5/1] border-b-2 border-b-[#9f5eb1]"
 	style="background-image: url('{$databaseInfo.cover}');"
 >
 <section id="header-content-wrapper" class="p-4 bg-slate-900 bg-opacity-75 w-max border-2 border-[#9f5eb1] backdrop-blur-lg">
