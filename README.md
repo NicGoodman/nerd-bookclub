@@ -1,4 +1,4 @@
-Hello from Greg!
+Haha, greg made a breaking change!
 
 # create-svelte
 
