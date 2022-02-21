@@ -1,4 +1,4 @@
-Hello from Greg!
+Hello from Nic!
 
 # create-svelte
 
